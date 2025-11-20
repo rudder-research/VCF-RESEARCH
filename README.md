@@ -71,21 +71,18 @@ VCF_Research/
 
 **🚀 Two-Level Compute Architecture**
 
-1. Colab Notebook (Data Engine)
-  -Handles all data operations:
+**1. Colab Notebook (Data Engine)**
+Handles all data operations:
   -FRED / Yahoo ingestion
   -normalization
   -monthly panel construction
   -trimming to full-coverage windows
   -pushing all generated files to GitHub
 
-This isolates data work in a stable cloud environment.
-
-
-----------------------------------------------------------
+This isolates data work in a stable cloud environment
 
 **2. GitHub Actions (Geometry Engine)**
-**Runs analyses:**
+Runs analyses:
   -θ (theta)
   -φ (phi)
   -coherence

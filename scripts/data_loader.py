@@ -8,9 +8,13 @@ from dotenv import load_dotenv
 # ------------------------------------------------------
 # AUTO-DETECT BASE DIRECTORY (works on Colab + Windows)
 # ------------------------------------------------------
+from pathlib import Path
+
 BASE_DIR = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = BASE_DIR / "registry" / "vcf_metric_registry.json"
 RAW_DIR = BASE_DIR / "data_raw"
+RAW_DIR.mkdir(parents=True, exist_ok=True)
+
 
 RAW_DIR.mkdir(parents=True, exist_ok=True)
 
